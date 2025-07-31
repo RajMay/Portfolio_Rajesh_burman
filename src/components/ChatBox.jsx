@@ -9,7 +9,7 @@ export default function ChatBox({ onClose }) {
     const newMsg = { role: "user", content: input };
     setMessages([...messages, newMsg]); 
 
-    const res = await fetch("http://localhost:8000/chat", {
+    const res = await fetch("https://ai-bot-backend-xpb3.onrender.com/chat", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ message: input, history: messages }),
