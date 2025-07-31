@@ -18,7 +18,7 @@ const Header = () => {
         //If it doesn't have the 'hidden' class, add it to hide the menu
         else {
             mobileMenu.classList.add('hidden');
-            
+
         }
 
 
@@ -147,6 +147,26 @@ className="hidden md:flex items-center gap-6 z-50 ml-4">
         {item.name}
       </button>
     ))}
+    <a
+    href="/Rajesh_resume_private.pdf"
+  download="Rajesh_resume.pdf" 
+      className="
+        px-8 py-3 
+        ml-8
+        rounded-full 
+        font-semibold 
+        text-white 
+        bg-gradient-to-r from-orange-400 to-orange-600
+        shadow-lg shadow-orange-500/30 
+        hover:from-orange-500 hover:to-orange-700 
+        hover:scale-105 
+        cursor-pointer
+        
+        transition-all duration-300 ease-in-out
+      "
+    >
+      Hire Me!
+    </a>
   </nav>
 
 
