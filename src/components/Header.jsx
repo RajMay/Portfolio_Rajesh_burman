@@ -7,8 +7,11 @@ import { SiLeetcode } from "react-icons/si";
 
 
 const Header = () => {
+
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
     // Function to toggle the mobile menu
     const toggleMobileMenu = () => {
+       setIsMenuOpen(!isMenuOpen);
         const mobileMenu = document.getElementById('mobileMenu');
         //If it has the 'hidden' class, remove it to show the menu
         if (mobileMenu.classList.contains('hidden')) {
@@ -67,7 +70,7 @@ const Header = () => {
   ))}
 
    <a
-    href="/Rajesh_resume_private.pdf"
+    href="/Rajesh_resume_public.pdf"
   download="Rajesh_resume.pdf" 
       className="
         px-8 py-3 
@@ -131,7 +134,10 @@ className="hidden md:flex items-center gap-6 z-50 ml-4">
 
 
             {/* Mobile Hidden by default navigation menu */}
-           <div id="mobileMenu" className="hidden fixed top-16 bottom-0 right-0 left-0 p-5 md:hidden z-40 bg-black bg-opacity-70 backdrop-blur-">
+           <div id="mobileMenu" className={`fixed top-16 bottom-0 right-0 left-0 p-5 md:hidden z-40 
+                    bg-black/50 backdrop-blur-md transform transition-transform duration-300
+                    ${isMenuOpen ? "translate-x-0" : "translate-x-full"}`}>
+
   <nav className="flex flex-col gap-6 items-center">
     {[
       { name: "ABOUT", id: "about" },
@@ -141,14 +147,14 @@ className="hidden md:flex items-center gap-6 z-50 ml-4">
     ].map((item, index) => (
       <button
         key={index}
-        onClick={() => handleNavClick(item.id)}
+        onClick={() => handleScroll(item.id)}
         className="hover:text-orange-500 text-sm sm:text-base my-1"
       >
         {item.name}
       </button>
     ))}
     <a
-    href="/Rajesh_resume_private.pdf"
+    href="/Rajesh_resume_public.pdf"
   download="Rajesh_resume.pdf" 
       className="
         px-8 py-3 
