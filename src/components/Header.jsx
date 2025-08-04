@@ -43,7 +43,7 @@ const Header = () => {
         <header className="z-50 flex justify-between  items-center py-4 px-4 lg:px-20 fixed top-0 left-0 w-full z-50 backdrop-blur-md bg-black/30 shadow-sm">
             <h1 data-aos="fade-down"
                 data-aos-easing="linear"
-                data-aos-duration="1500" className="text-3xl md:text-4xl lg:text-5xl mt-4 font-dark  m-0">Rajesh Burman</h1>
+                data-aos-duration="1500" className="text-orange-600 font-semibold text-3xl md:text-4xl lg:text-5xl mt-4 font-dark  m-0">Rajesh Burman</h1>
                 
 
             {/* Navigation links */}
@@ -70,6 +70,7 @@ const Header = () => {
   ))}
 
    <a
+   data-aos="fade-down-left"
     href="/Rajesh_resume_public.pdf"
   download="Rajesh_resume.pdf" 
       className="
