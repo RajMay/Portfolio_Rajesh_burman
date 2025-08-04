@@ -27,7 +27,7 @@ const Hero = () => {
                 </div>
                {/*  main Heading   */}  
                <h1 className='text-3xl sm-text-4xl md:text-5xl lg:text-6xl
-               font-semibold tracking-wider my-8'>
+               font-semibold tracking-wider my-8 text-orange-600'>
                 AI
                 <br />
                 DEVELOPER
