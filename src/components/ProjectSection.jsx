@@ -14,7 +14,7 @@ const projects = [
         image: "/ai_portfolio.png",
         tags: ["React", "Tailwind CSS", "phi3-mini model"],
         demoURL: "#",
-        githubURL: "#",
+        githubURL: "https://github.com/RajMay/AI-content-marketing-AdSynk-AI-",
     },
     {
         id: 2,
@@ -23,7 +23,7 @@ const projects = [
         image: "/chess.png",
         tags: ["negamax", "python", "chess engine", "chessboard.js"],
         demoURL: "#",
-        githubURL: "#",
+        githubURL: "https://github.com/RajMay/AI-CHESS-AGENT",
     },
     {
         id: 3,
@@ -32,7 +32,7 @@ const projects = [
         image: "/email.png",
         tags: ["react js", "email", "llm"],
         demoURL: "#",
-        githubURL: "#",
+        githubURL: "https://github.com/RajMay/GenAI_mail_generator",
     },
     {
         id: 4,
@@ -41,7 +41,7 @@ const projects = [
         image: "/ai_chatbot.png",
         tags: ["gemini API", "NLP", "React", "Tailwind ", "python"],
         demoURL: "#",
-        githubURL: "#",
+        githubURL: "https://github.com/RajMay/AI-chatBot",
     },
     {
         id: 5,
@@ -50,7 +50,7 @@ const projects = [
         image: "/news.png",
         tags: ["ML", "NLP", "React", "Tailwind CSS", "python"],
         demoURL: "#",
-        githubURL: "#",
+        githubURL: "https://github.com/RajMay/Fake_news_project",
     },
     {
         id: 6,
@@ -58,7 +58,7 @@ const projects = [
         description: " A voice assistant that uses AI to respond to user commands and remind them about there meeting ans tasks its made from n8n workflow",
         image: "/Voice.png",
         tags: ["n8n", "google calendar", "gemini model", "retell AI"],
-        demoURL: "",
+        demoURL: "#",
         githubURL: "#",
     },
 
